@@ -11,13 +11,26 @@
 <body>
 <!--technical summary -->
   <div ng-app="myApp" ng-controller="myCtrl">
-      Proficient = {{ language }}
+    <p ng-repeat="language in languages">
+      Proficient in: {{ language }}
+    </p>
   </div>
   
 <script>
   var app =  angular.module('myApp', []);
   app.controller('myCtrl', function($scope) {
-     $scope.language = "Java";
+     $scope.language = [
+       "Java",
+       "C#",
+       "JavaScript",
+       "PHP",
+       "MySQL",
+       "HTML",
+       "JQuery",
+       "CSS",
+       "Agile Methodology",
+       "Jira",
+       ]
   });
 </script>
 </body>

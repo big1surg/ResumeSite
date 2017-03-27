@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <meta charset="UTF-8">
 <title>Sergio Garcia Resume</title>
+<h1>Resume</h1>
 </head>
 
 <body>
-Content of the document......
+<!--technical summary -->
+  <div ng-app="myApp" ng-controller="myCtrl">
+      Proficient = {{ language }}
+  </div>
+  
+<script>
+  var app =  angular.module('myApp', []);
+  app.controller('myCtrl', function($scope) {
+     $scope.language = "Java";
+  });
+</script>
 </body>
-
 </html>
-<h1>Resume</h1>

@@ -3,8 +3,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel= "stylesheet" href = "headers.css">
-<link rel= "stylesheet" href = "style.css">
+<link rel= "stylesheet" href = "css/headers.css">
+<link rel= "stylesheet" href = "css/style.css">
 <meta charset="UTF-8">
 <title>Sergio Garcia Resume</title>
 </head>
@@ -26,19 +26,35 @@
 <!--objective-->
 <div>
 <h2 id="obj">Objective</h2>
+  <p>Graduating student looking to secure full time position in the technology industry with increasing responsibility and opportunities to collaborate across multiple disciplines.</p>
 </div>
 
 <!--education-->
 <div>
 <h2 id="obj">Education</h2>
+  <p><b>CALIFORNIA STATE UNIVERSITY LONG BEACH – LONG BEACH, CA</b></p>
+  <ul><li>Bachelor of Science in Computer Science – Anticipated Graduation: May 2017</li></ul>
 </div>
 
 <!--technical summary -->
 <div>
 <h2 id="obj">Technical Summary</h2>
 </div>
+  
   <div ng-app="myApp" ng-controller="myCtrl">
-      Proficient in:<ul  style="list-style-type:none"><li ng-repeat="language in languages"> {{ language }}</li></ul>
+    <b>Language and Skills</b>
+      <p>Proficient in:<p><ul  style="list-style-type:none"><li ng-repeat="language in languages"> {{ language }}</li></ul>
+      <p>Familiar with:<p><ul  style="list-style-type:none"><li ng-repeat="language in familiarLanguages"> {{ language }}</li></ul>
+      <p>Knowledgeable in:<p><ul  style="list-style-type:none"><li ng-repeat="language in familiarLanguages"> {{ language }}</li></ul>
+  </div>
+  
+  <div>
+    <b>Professional Projects</b>
+    <ul>
+      Website for CSULB IEEE Green Energy Conference
+      <li>Website for CSULB IEEE Green Energy Conference
+      </li>
+    </ul>
   </div>
   
   
@@ -58,17 +74,14 @@
   var app =  angular.module('myApp', []);
   app.controller('myCtrl', function($scope) {
      $scope.languages = [
-       "Java",
-       "C#",
-       "JavaScript",
-       "PHP",
-       "MySQL",
-       "HTML",
-       "JQuery",
-       "CSS",
-       "Agile Methodology",
-       "Jira",
+       "Java","C#","JavaScript","PHP","MySQL","HTML","JQuery","CSS","Agile Methodology","Jira",
        ]
+    $scope.familiarLanguages = [
+      "C++","Python","JSON","AJAX","ASP.Net","Node.js","Angular.js","Android Development",
+      ]
+    $scope.skills=[
+      "Web Development","Application Developement","Hardware Testing","Debugging"
+      ]
   });
 </script>
 </body>

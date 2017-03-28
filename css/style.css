@@ -1,5 +1,5 @@
 body {
-	background: gray !important; 
+	background: #f2f2f2 !important; 
  }
  
 p{
@@ -7,5 +7,7 @@ font-size: 150%;
 }
 
 .container{
+	width: 65% !important;
 	background: #FFFFFF !important;
+	margin-top: 100px;
 }

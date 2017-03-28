@@ -3,16 +3,55 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel= "stylesheet" href = "headers.css">
 <meta charset="UTF-8">
 <title>Sergio Garcia Resume</title>
-<h1>Resume</h1>
 </head>
 
 <body>
+<!--heading-->
+<div class="container">
+  <div class="page-header">
+    <h1>Sergio Garcia</h1>  
+    <h2>Resume</h2>
+  </div>
+  <p>garcia.serg92@gmail.com</p>      
+  <p>cell: 562-212-2864. | Long Beach, CA.</p>      
+</div>
+
+<!--image--->
+<img src="cinqueterre.jpg" class="img-responsive" alt="Cinque Terre" width="304" height="236"> 
+</div>
+
+<!--objective--->
+<div>
+<h2 id="obj">Objective</h2>
+</div>
+
+<!--education--->
+<div>
+<h2 id="obj">Education</h2>
+</div>
+
 <!--technical summary -->
+<div>
+<h2 id="obj">Technical Summary</h2>
+</div>
   <div ng-app="myApp" ng-controller="myCtrl">
       Proficient in:<ol><li ng-repeat="language in languages"> {{ language }}</li></ol>
   </div>
+  
+  
+<!--related work--->
+<div>
+<h2 id="obj">Related Work Experience</h2>
+</div>
+
+
+<!--unrelated work--->
+<div>
+<h2 id="obj">Unrelated Work Experience</h2>
+</div>
   
 <script>
   var app =  angular.module('myApp', []);

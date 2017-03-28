@@ -1,11 +1,11 @@
 body {
-	background: gray; 
+	background: gray !important; 
  }
  
 p{
 font-size: 150%;
 }
 
-div{
-	background: #FFFFFF;
+.container{
+	background: #FFFFFF !important;
 }

@@ -1,7 +1,11 @@
 body {
-	 background: #FFFFFF;
+	background: gray; 
  }
  
 p{
 font-size: 150%;
+}
+
+div{
+	background: #FFFFFF;
 }

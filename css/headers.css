@@ -6,4 +6,5 @@ body {
 	background-color: #b3ccff;
 	padding: 10px 0px 10px 10px;
 	border-left: thick solid blue;
+	width: 100%;
 }

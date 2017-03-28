@@ -12,6 +12,6 @@ font-size: 150%;
 	margin-top: 100px;
 }
 
-.page-header{
+.page-header>div{
 	float: right;
 }
